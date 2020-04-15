@@ -1,0 +1,302 @@
+/* main >>> */
+
+/*
+#475F77 rgba(71,95,119,1) navy
+#354B5E rgba(53,75,94,1) light navy
+#D74B4B rgba(215,75,75,1) red
+#DCDDD8 rgba(220,221,216,1) cream
+*/
+
+.body-main {
+    background-image: url("../img/iceland.jpg");
+    background-color: #354B5E;
+    background-blend-mode: normal;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Playfair Display', serif;
+    color: #DCDDD8;
+    font-size: 14px;
+}
+
+.header-main {
+    background-color: #354B5E;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo-text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #D74B4B;
+    padding-left: 12px;
+}
+
+.tiny-bg {
+    background-color:#475F77 ;
+    opacity: 0.95;
+}
+
+.text-red {
+    color: #D74B4B;
+}
+
+.footer-main {
+    background-color: #354B5E;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    height: 96px;
+    justify-content: center;
+    padding-top: 34px;
+    margin-top: auto;
+    color: #D74B4B;
+    font-size: 16px;
+}
+
+.wrapper {
+    margin-top: 150px;
+    margin-bottom: 60px;
+
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tiny-container {
+    max-width: 800px;
+    width: 100%;
+    height: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tinytiny-container {
+    width: 300px;
+    height: 100%;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.large-container {
+    height: calc(100vh - 150px);
+}
+
+.logo {
+    text-align: left;
+    padding: 20px 0;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 32px;
+    margin: 12px;
+}
+
+.del {
+    text-decoration: line-through;
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.my-block {
+    margin-top: 60px;
+    align-items: center;
+}
+
+.my-block-short {
+    min-height: 240px;
+    min-width: 200px;
+}
+
+.my-block-middle {
+    height: 320px;
+}
+
+.my-block-large {
+    height: 400px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+    width: 600px;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.w-20 {
+    width: 20%;
+    padding-top: 12px;
+    padding-right: 12px;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.img-box {
+    display: block;
+    width: 100%;
+    height: 120px;
+}
+
+.img-box-logos img {
+    width: 162px;
+    height: 162px;
+    padding: 12px;
+} 
+
+.object-fit-cover {
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+
+.fab-red {
+    color: #D74B4B;
+}
+
+.fab-blue {
+    color: #9dd7d5;
+}
+
+.fab-size-36 {
+    font-size: 36px;
+}
+
+.fab-size-24 {
+    font-size: 24px;
+}
+
+.fab-margin {
+    margin: 36px 6px;
+}
+
+.margin-top {
+    margin-top: 36px;
+}
+
+.margin-4 {
+    margin: 36px auto;
+}
+
+/* <<< main */
+
+/* galleries >>> */
+
+/* 
+#505050 rgba(80,80,80,1) brown
+#1f9792 rgba(31,151,146,1) green
+#9dd7d5 rgba(157,215,213,1) light green
+#fff4c5 rgba(255,244,197,1) cream
+*/
+
+.body-gallery {
+    background-image: url("../img/iceland_brown.jpg");
+    background-color: #505050; /* 1 */
+    background-blend-mode: normal;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Playfair Display', serif;
+    color: #fff4c5; /* 4 */
+    font-size: 14px;
+}
+
+.header-gallery {
+    background-color: #505050; /* 1 */
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo-text-gallery {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #9dd7d5; /* 2 */
+    padding-left: 12px;
+}
+
+.tiny-bg-gallery {
+    background-color:#1f9792 ; /* 3 */
+    opacity: 0.95;
+}
+
+.text-green {
+    color: #9dd7d5; /* 2 */
+}
+
+.footer-gallery {
+    background-color: #505050; /* 1 */
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    height: 96px;
+    justify-content: center;
+    padding-top: 34px;
+    margin-top: auto;
+    color: #9dd7d5; /* 2 */ 
+    font-size: 16px;
+}
+
+/* <<< galleries */
