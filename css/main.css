@@ -78,8 +78,8 @@
 }
 
 .tiny-container {
-    max-width: 800px;
-    height: 80%;
+    max-width: 680px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -256,9 +256,14 @@ h2 {
         text-align: center;
     }
 
+    .introduction-mobile-flex {
+        display: flex;
+        text-align: center;
+    }
+
     .text-width {
         max-width: 440px;
-        margin-top: 12px;
+        margin: 12px auto;
     }
 
     .my-block-gallery {
