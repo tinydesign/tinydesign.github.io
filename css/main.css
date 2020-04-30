@@ -191,6 +191,10 @@ h2 {
     display: none;
 }
 
+.introduction-mobile-flex {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
 
     #wrapper {background:none} /*PC用の背景はオフ*/
