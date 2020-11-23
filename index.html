@@ -1,137 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>tiny design</title>
-    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="img/appleicon.png"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/appleicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
-    <link href="fontawesome/css/all.css" rel="stylesheet">
-    
-  </head>
+        <title>tiny design | ちょっとしたデザイン</title>
+        <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="icon" href="img/favicon.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/sfy5pfy.css">
+        <link href="fontawesome/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="lightbox2/css/lightbox.css">
 
-  <body class="body">
-    <header class="header">
-        <div class="container d-flex justify-content-center align-items-end">
-            <div class="logo d-flex align-items-end">
-                <a href="index.html"><img src="img/logo_d74b4b.png" alt="tiny design" height="60px"></a>
-            </div>
-        </div>     
-        <div class="topnav d-flex justify-content-center">
-            <a href="index.html">Home</a>
-            <a href="https://shop.tinydesign.work/">Online shop</a>
-            <div class="dropdown">
-                <button class="dropbtn">Artworks
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="Illustrations.html">Illustrations</a>
-                    <a href="logos.html">Logos</a>
-                    <a href="gallery.html">Photos</a>
+    </head>
+
+    <body class="body">            
+        <div class="wrapper">
+            <div class="left-column">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logo-image" src="img/logo.png" alt="tiny design">
+                    </a>                
+                </div>
+                <div class="nav-list">
+                    <ul class="list-style">
+                        <li><a href=#introduction>はじめまして</a></li>
+                        <li class="margin-top-18">作品たち ▼
+                            <ul>
+                                <li><a href=#artworks-illustrations>イラスト</a></li>
+                                <li><a href=#artworks-logos>ロゴ</a></li>
+                                <li><a href=#artworks-photographs>しゃしん</a></li>
+                            </ul>
+                        </li>
+                        <li class="margin-top-18"><a href="https://note.com/tinydesign" target="_blank">ブログ</a></li>
+                        <li><a href="https://shop.tinydesign.work/" target="_blank">ウェブショップ</a></li>
+                        <li><a href="https://forms.gle/8wmE3VHcn8ctoGg56">お問い合わせ</a></li>
+                    </ul>
                 </div>
             </div>
-        </div> 
-    </header>
 
-    <div class="wrapper">
-        <section class="large-container">
-            <div class="d-flex justify-content-center align-items-center height-100 introduction-web">
-                <h2><span class="text-red">I am a tiny tiny tiny tiny human being.</span></h2>
-            </div>
-            <div class="d-flex justify-content-center align-items-center height-100 introduction-mobile-flex">
-                <h2><span class="text-red">I am a tiny human being.</span></h2>
-            </div>
-        </section>
+            <header>
+                <div class="header-logo-menu">
+                    <div id="nav-drawer">
+                        <input id="nav-input" type="checkbox" class="nav-unshown">
+                        <label id="nav-open" for="nav-input"><span></span></label>
+                        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                        <div id="nav-content">
+                            <a href="index.html"><img class="list-image" src="img/logo.png" ></a>
+                            <div class="list-container">
+                                <ul class="list-style margin-top-40">
+                                    <li><a href="about.html">はじめまして</a></li>
+                                    <li class="margin-top-18">作品たち ▼
+                                        <ul>
+                                            <li><a href=#artworks-illustrations>イラスト</a></li>
+                                            <li><a href=#artworks-logos>ロゴ</a></li>
+                                            <li><a href=#artworks-photographs>しゃしん</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="margin-top-18"><a href="https://note.com/tinydesign" target="_blank">ブログ</a></li>
+                                    <li><a href="https://shop.tinydesign.work/" target="_blank">ウェブショップ</a></li>
+                                    <li><a href="https://forms.gle/8wmE3VHcn8ctoGg56">お問い合わせ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-mobile">
+                    <a href="index.html"><img src="img/logo_text.png"></a>
+                </div>
+            </header>
 
-        <section class="container my-block tiny-bg d-flex align-items-center justify-content-center">
-            <div class="tiny-container margin-18">
-                <div class="d-flex justify-content-between align-items-end tiny-profile introduction-web">
-                    <div>
-                        <h2>Hi, I'm <span class="text-red">A</span>sumi</h2>
-                        <div class="indent-1">  - a kind of designer/illustrator</div>
-                        <div class="indent-1">  - based in Bath, England, UK </div>
-                        <div class="indent-1">  - have a passion for</div>
-                        <div class="indent-2">traveling/taking pictures/drawing illustrations</div>
+            <div class="right-column">
+                <section class="nav-sns">
+                    <div class="d-block">
+                        <a href="https://www.instagram.com/tinytinydesign/" target="_blank"><span class="nav-fab"><i class="fab fa-instagram"></i></span></a>
+                        <a href="http://www.shutterstock.com/g/tinytinydesign" target="_blank"><span class="nav-fab"><i class="fas fa-camera"></i></span></a>
+                        <a href="https://github.com/tinydesign" target="_blank"><span class="nav-fab"><i class="fab fa-github"></i></span></a>
+                        <a href="mailto:tinytinydesign@gmail.com"><span class="nav-fab"><i class="fas fa-envelope"></i></span></a>
+                        <a href="https://shop.tinydesign.work/" target="_blank"><span class="nav-fab"><i class="fas fa-shopping-cart"></i></span></a>
                     </div>
-                    <img class="image" src="img/fta_dcddd8.png">
+                </section>
+            
+        
+                <div class="nav-scroll">
+                    <a href="#artworks-illustrations"><span class="nav-fab"><i class="fas fa-chevron-circle-up"></i></span></a>
                 </div>
-                <div class="tiny-profile introduction-mobile">
-                    <div>
-                        <h2>Hi, I'm <span class="text-red">A</span>sumi</h2>
-                        <div class="text-width">A kind of designer/illustrator, based in Bath, England, UK, have a passion for traveling,taking pictures and drawing illustrations</div>
+
+                <div id="introduction">
+                    <div class="introduction-text">
+                        <p>はじめまして、<span style="font-weight: 500; color: #ecd7d5;">tiny design / よしくま</span>です。<br>
+                            イラストや、写真みたいな絵を描いたり、写真を撮ったりしています。
+                            名刺・ちらし・ポスター・ウェディングアイテムなどなど、ご提案いたします。                            
+                            他では見かけないようなユニークなデザインをお探しのかた、一緒につくりませんか？
+                            お気軽に <a href="https://forms.gle/8wmE3VHcn8ctoGg56">お問い合わせ</a> ください。
+                        </p>
+                        <hr size="1" color="white" noshade>
+                        <p>Hi, I'm <span style="font-weight: 500; color: #ecd7d5;">YosiKuma</span> as tiny design.<br>
+                            I am striving hard to create new and unique designs like below.
+                            If you are interested in my artworks, <a href="https://forms.gle/8wmE3VHcn8ctoGg56"> please contact me, </a>it’s fine if English is easier for you!
+                        </p>
                     </div>
-                    <div class="resizeimage">
-                        <img class="image" src="img/fta_dcddd8.png">
+                    <img class="introduction-image" src="img/portrait.png" alt="self-portrait" >
+                </div>
+
+                <div class="artworks">
+
+                    <div id="artworks-illustrations">
+                        <div class="margin-top-40">
+                            <p class="artworks-title">▶︎ イラスト - Illustrations</p>
+
+                            <div class="margin-top-40">
+                                <p class="artworks-title">ポール マッカートニー(ビートルズ)</p>
+                                <p class="artworks-subtitle">Paul McCartney(The Beatles)</p>
+                                <a href="img/i_portrait_paulmccartney.jpg" data-lightbox="portrait_paulmccartney">
+                                    <img class="image margin-top-18" src="img/i_portrait_paulmccartney.jpg" alt="artworks-portrait">
+                                </a>
+                                <p class="margin-top-24 artworks-subtitle"> - 活用例 : 名刺 / Business card</p>
+                                <div class="d-flex-artworks margin-bottom-40">
+                                    <a href="img/i_businesscard_1.png" data-lightbox="portrait_paulmccartney">
+                                        <img class="image-sub" src="img/i_businesscard_1.png" alt="artworks-business-card">
+                                    </a>
+                                    <a href="img/i_businesscard_1white.png" data-lightbox="portrait_paulmccartney">
+                                        <img class="image-sub" src="img/i_businesscard_1white.png" alt="artworks-business-card">
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <hr color="#f5f5f7" style="border-top:1px dashed white;" noshade >
+                            <p class="artworks-title">ハリー ポッター・ハーマイオニー グレンジャー・ロン ウィーズリー</p>
+                            <p class="artworks-subtitle">Harry Potter / Hermione Granger / Ron Weasley</p>
+                            <a href="img/i_portrait_harrypotter.jpg" data-lightbox="portrait_harrypotter">
+                                <img class="image margin-top-18" src="img/i_portrait_harrypotter.jpg" alt="artworks-portrait">
+                            </a>
+                            <p class="margin-top-24 artworks-subtitle"> - 活用例 : 名刺 / Business card</p>
+                            <div class="d-flex-artworks margin-bottom-40">
+                                <a href="img/i_businesscard_2.png" data-lightbox="portrait_harrypotter">
+                                    <img class="image-sub" src="img/i_businesscard_2.png" alt="artworks-business-card">
+                                </a>
+                                <a href="img/i_businesscard_2white.png" data-lightbox="portrait_harrypotter">
+                                    <img class="image-sub" src="img/i_businesscard_2white.png" alt="artworks-business-card">
+                                </a>
+                            </div>
+
+                            <hr color="#f5f5f7" style="border-top:1px dashed white;" noshade >
+                            <p class="artworks-title">イギリスの建物</p>
+                            <p class="artworks-subtitle">Histolical buildings in UK</p>
+                            <a href="img/i_buildings_1.png" data-lightbox="portrait_buildings">
+                                <img class="image margin-top-18" src="img/i_buildings_1.png" alt="artworks-landscape">
+                            </a>
+                            <p class="margin-top-24 artworks-subtitle"> - 活用例 : ショップカード / Shop card</p>
+                            <div class="d-flex-artworks margin-bottom-40">
+                                <a href="img/i_shopcard_front.png" data-lightbox="portrait_buildings">
+                                    <img class="image-sub" src="img/i_shopcard_front.png" alt="artworks-shopcard">
+                                </a>
+                                <a href="img/i_shopcard_back.png" data-lightbox="portrait_buildings">
+                                    <img class="image-sub" src="img/i_shopcard_back.png" alt="artworks-shopcard">
+                                </a>
+                            </div>
+
+                            <hr color="#f5f5f7" style="border-top:1px dashed white;" noshade >
+                            <p class="artworks-title">サンタクロースもマスクでコロナ予防</p>
+                            <p class="artworks-subtitle">Wish you a SAFE Christmas</p>
+                            <a href="img/i_christmas.png" data-lightbox="illustration">
+                                <img class="image margin-top-18 margin-bottom-40" src="img/i_christmas.png">
+                            </a>
+
+                            <hr color="#f5f5f7" style="border-top:1px dashed white;" noshade >
+                            <p class="artworks-title">鹿 春夏秋冬</p>
+                            <p class="artworks-subtitle">Deers in four seasons</p>
+                            <a href="img/i_deers.png" data-lightbox="illustration">
+                                <img class="image margin-top-18 margin-bottom-40" src="img/i_deers.png">
+                            </a>
+
+                            <hr color="#f5f5f7" style="border-top:1px dashed white;" noshade >
+                            <p class="artworks-title">小さな手</p>
+                            <p class="artworks-subtitle">Tiny hand</p>
+                            <a href="img/i_tinyhand_1.png" data-lightbox="illustration-tinyhand">
+                                <img class="image margin-top-18 margin-bottom-40" src="img/i_tinyhand_1.png">
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                    <div id="artworks-logos">
+                        <hr size="1" color="white" noshade>
+                        <div class="margin-top-40">
+                            <p class="artworks-title">▶︎ ロゴ - Logos</p>
+                            <p class="artworks-title">WEBサービス ロゴ＋デザイン : ウケトリー - ネットでお料理を注文</p>
+                            <p class="artworks-subtitle">Web service LOGO & WEB DESIGN : Uketoly - Simple takeaway solution</p>
+                            <p class="artworks-link"><a href="https://www.uketoly.com/" target="_blank">https://www.uketoly.com/</a></p>
+                            <a href="img/l_logo_uketoly_img.jpg" data-lightbox="logo_uketoly">
+                                <img class="image margin-top-18 margin-bottom-40" src="img/l_logo_uketoly_img.jpg" alt=artworks-logo>
+                            </a>
+
+                            <hr color="#f5f5f7" style="border-top:1px dashed white;" noshade >
+                            <p class="artworks-title">ブログサイト ロゴ : ビアキャンパーズ - ビール情報をイギリスから</p>
+                            <p class="artworks-subtitle">Blog LOGO : Beer Campers - Beer informations from UK</p>
+                            <p class="artworks-link"><a href="https://www.beercampers.com/" target="_blank">https://www.beercampers.com/</a></p>
+                            <a href="img/l_logo_beercampers_img.jpg" data-lightbox="logo_beercampers">
+                                <img class="image margin-top-18 margin-bottom-40" src="img/l_logo_beercampers_img.jpg" alt=artworks-logo>
+                            </a>
+
+                            <hr color="#f5f5f7" style="border-top:1px dashed white;" noshade >
+                            <p class="artworks-title">Youtubeチャンネル ロゴ : SCENIC DRIVE AND WALK - イギリスの絶景紹介チャンネル</p>
+                            <p class="artworks-subtitle">Youtube channel LOGO : SCENIC DRIVE AND WALK - Videos about breath-taking view in UK</p>
+                            <p class="artworks-link"><a href="https://www.youtube.com/channel/UCwPD5d2LdO-Xfa_b9TBv9eg" target="_blank">https://www.youtube.com/channel/UCwPD5d2LdO-Xfa_b9TBv9eg</a></p>
+                            <a href="img/l_logo_sdaw_img.jpg" data-lightbox="logo_sdaw">
+                                <img class="image margin-top-18 margin-bottom-40" src="img/l_logo_sdaw_img.jpg" alt=artworks-logo>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="artworks-photographs">
+                        <hr size="1" color="white" noshade>
+                        <div class="margin-top-40">
+                            <p class="artworks-title">▶︎ しゃしん - Photographs</p>
+                            <p class="artworks-subtitle">Shutterstockで売っています。 / You can buy some of them from Shutterstock.</p>
+                            <p class="artworks-link"><a href="http://www.shutterstock.com/g/tinytinydesign" target="_blank">http://www.shutterstock.com/g/tinytinydesign</a></p>
+
+                            <p class="artworks-title">スノードン登山
+                            </p>
+                            <p class="artworks-subtitle">Hiking in Snowdon, Wales</p>
+
+                            <div class="d-flex-artworks margin-top-18">
+                                <a href="img/p_snowdon_00001.jpg" data-lightbox="photographs_snowdon">
+                                    <img class="image" src="img/p_snowdon_00001.jpg" alt=photographs_snowdon>
+                                </a>
+                                <a href="img/p_snowdon_00002.jpg" data-lightbox="photographs_snowdon">
+                                    <img class="image" src="img/p_snowdon_00002.jpg" alt=photographs_snowdon>
+                                </a>
+                            </div>
+                            <div class="d-flex-artworks">
+                                <a href="img/p_snowdon_00003.jpg" data-lightbox="photographs_snowdon">
+                                    <img class="image" src="img/p_snowdon_00003.jpg" alt=photographs_snowdon>
+                                </a>
+                                <a href="img/p_snowdon_00004.jpg" data-lightbox="photographs_snowdon">
+                                    <img class="image" src="img/p_snowdon_00004.jpg" alt=photographs_snowdon>
+                                </a>
+                                <a href="img/p_snowdon_00005.jpg" data-lightbox="photographs_snowdon">
+                                    <img class="image" src="img/p_snowdon_00005.jpg" alt=photographs_snowdon>
+                                </a>
+                            </div>
+                            <div class="d-flex-artworks margin-bottom-40">
+                                <a href="img/p_snowdon_00006.jpg" data-lightbox="photographs_snowdon">
+                                    <img class="image" src="img/p_snowdon_00006.jpg" alt=photographs_snowdon>
+                                </a>
+                                <a href="img/p_snowdon_00007.jpg" data-lightbox="photographs_snowdon">
+                                    <img class="image" src="img/p_snowdon_00007.jpg" alt=photographs_snowdon>
+                                </a>
+                            </div>
+
+
+                            <hr color="#f5f5f7" style="border-top:1px dashed white;" noshade >
+                            <p class="artworks-title">イギリスの廃修道院・古城
+                            </p>
+                            <p class="artworks-subtitle">Abbeys and old castles in UK</p>
+
+                            <div class="d-flex-artworks margin-top-18">
+                                <a href="img/p_abbey_00001_EileanDonanCastle.jpg" data-lightbox="photographs_abbeys">
+                                    <img class="image" src="img/p_abbey_00001_EileanDonanCastle.jpg" alt=photographs_abbeys>
+                                </a>
+                                <a href="img/p_abbey_00002_WhitbyAbbey.jpg" data-lightbox="photographs_abbeys">
+                                    <img class="image" src="img/p_abbey_00002_WhitbyAbbey.jpg" alt=photographs_abbeys>
+                                </a>
+                            </div>
+
+                            <div class="d-flex-artworks">
+                                <a href="img/p_abbey_00003_KirkstallAbbey.jpg" data-lightbox="photographs_abbeys">
+                                    <img class="image" src="img/p_abbey_00003_KirkstallAbbey.jpg" alt=photographs_abbeys>
+                                </a>
+                                <a href="img/p_abbey_00004_KirkstallAbbey.jpg" data-lightbox="photographs_abbeys">
+                                    <img class="image" src="img/p_abbey_00004_KirkstallAbbey.jpg" alt=photographs_abbeys>
+                                </a>
+                            </div>
+
+                            <div class="d-flex-artworks margin-bottom-40">
+                                <a href="img/p_abbey_00005_FurnessAbbey.jpg" data-lightbox="photographs_abbeys">
+                                    <img class="image" src="img/p_abbey_00005_FurnessAbbey.jpg" alt=photographs_abbeys>
+                                </a>
+                                <a href="img/p_abbey_00006_BoltonAbbey.jpg" data-lightbox="photographs_abbeys">
+                                    <img class="image" src="img/p_abbey_00006_BoltonAbbey.jpg" alt=photographs_abbeys>
+                                </a>
+                            </div>
+
+                            <hr color="#f5f5f7" style="border-top:1px dashed white;" noshade >
+                            <p class="artworks-title">ふゆ
+                            </p>
+                            <p class="artworks-subtitle">Winter</p>
+
+                            <a href="img/p_winter_00001.jpg" data-lightbox="photographs_winter">
+                                <img class="image  margin-top-18" src="img/p_winter_00001.jpg" alt=photographs_winter>
+                            </a>
+                            <div class="d-flex-artworks margin-bottom-40">
+                                <a href="img/p_winter_00002.jpg" data-lightbox="photographs_winter">
+                                    <img class="image" src="img/p_winter_00002.jpg" alt=photographs_winter>
+                                </a>
+                                <a href="img/p_winter_00003.jpg" data-lightbox="photographs_winter">
+                                    <img class="image" src="img/p_winter_00003.jpg" alt=photographs_winter>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="container my-block tiny-bg d-flex align-items-center">
-            <div class="tiny-container text-align-center margin-18">
-                <div class="d-flex align-items-center">
-                    <h2>
-                        Wh<span class="text-red">a</span>t I c<span class="text-red">a</span>n do
-                    </h2>
+            <footer class="footer">
+                <hr size="1" color="white" noshade>
+                <div>
+                    <p>© 2020 tiny design. All rights reserved.</p>
+                    <a href="mailto:tinytinydesign@gmail.com">tinytinydesign@gmail.com</a>
+                
                 </div>
-                <div class="d-flex justify-content-between align-items-center tiny-profile">
-                    <div class="w-180 text-align-center">
-                        <div>Drawing Illustrations</div>
-                        <a href="Illustrations.html"><img src="img/bear_bluegray.png" onmouseover="this.src='img/bear_night.png'" onmouseout="this.src='img/bear_bluegray.png'" class="img-box object-fit-cover margin-18"></a>
-                    </div>
-                    <div class="w-180 text-align-center">
-                        <div>Creating Logos</div>
-                        <a href="logos.html"><img src="img/beercampers_logo_bluegray.png" onmouseover="this.src='img/beercampers_logo.png'" onmouseout="this.src='img/beercampers_logo_bluegray.png'" class="img-box object-fit-cover margin-18"></a>
-                    </div>
-                    <div class="w-180 text-align-center">
-                        <div>Providing Pics</div> 
-                        <a href="gallery.html"><img src="img/stpaul_bluegray.jpg" onmouseover="this.src='img/stpaul.jpg'" onmouseout="this.src='img/stpaul_bluegray.jpg'" class="img-box object-fit-cover margin-18"></a>
-                    </div>
-                    <!-- <div class="w-180 text-align-center">
-                        <div>Editing Videos</div>
-                        <a href="https://www.youtube.com/channel/UCwPD5d2LdO-Xfa_b9TBv9eg"><img src="img/ytyorkshiredales_bluegray.png" onmouseover="this.src='img/ytyorkshiredales.jpg'" onmouseout="this.src='img/ytyorkshiredales_bluegray.png'" class="img-box object-fit-cover margin-18"></a>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-
-        <section class="container my-block tiny-bg d-flex align-items-center justify-content-center">
-            <div class="d-inline-block margin-18">
-                <div class="container d-flex align-items-center tiny-profile">
-                    <div class="container d-inline-block text-align-center">
-                        <a href="mailto:tinytinydesign@gmail.com"><span class="fab-white fab-size-36"><i class="fas fa-envelope"></i></span></a>
-                        <div>I'm available.<br>If you are interested in my works,<br>message me!</div>
-                    </div>
-                    <div class="container d-inline-block text-align-center introduction-web">
-                        <span class="fab-white fab-size-36"><i class="fas fa-hands"></i></span><br>
-                        <div class="del">I'm exhausted. <br>If you are free,<br>massage me!</div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center margin-top">
-                    <div>
-                        <a href="https://github.com/tinydesign"><span class="fab-white fab-margin fab-size-24"><i class="fab fa-github"></i></span></a>
-                        <!-- <a href="https://www.youtube.com/channel/UCwPD5d2LdO-Xfa_b9TBv9eg"><span class="fab-white fab-margin fab-size-24"><i class="fab fa-youtube"></i></span></a> -->
-                        <a href="https://www.instagram.com/tinytinydesign/"><span class="fab-white fab-margin fab-size-24"><i class="fab fa-instagram"></i></span></a>
-                        <!-- <a href="https://twitter.com/scenicdrivewalk"><span class="fab-white fab-margin fab-size-24"><i class="fab fa-twitter"></i></span></a> -->
-                        <a href="http://www.shutterstock.com/g/LiberiDesign"><span class="fab-white fab-margin fab-size-24"><i class="fas fa-camera"></i></span></a>
-                        <a href="https://untappd.com/user/Asumi_Y"><span class="fab-white fab-margin fab-size-24"><i class="fab fa-untappd"></i></span></a>          
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <footer class="footer">
-        <div class="container">
-            <div>© 2020 tiny design. All rights reserved.</div>
+            </footer>
         </div>
-    </footer>
-    
-  </body>
+
+        <script src="lightbox2/js/lightbox-plus-jquery.min.js"></script>
+        <script>
+            lightbox.option({
+                'wrapAround': true
+            })
+        </script>
+    </body>
 </html>
