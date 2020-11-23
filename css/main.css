@@ -40,6 +40,7 @@
 .right-column {
     width: calc(100%-124px);
     margin-left: 124px;
+    position: relative;
 }
 
 .margin-top-40 {
@@ -158,6 +159,7 @@ header {
     background-color: #587da0;
     display: flex;
     margin-bottom: 16px;
+    z-index: 99;
 }
 
 #nav-drawer {
